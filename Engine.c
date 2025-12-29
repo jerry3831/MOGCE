@@ -193,10 +193,3 @@ unsigned long long knight_attacks_from(int square)
 {
     return knightsAttacks[square];
 }
-
-// knight move debug purpose---------------->
-void debug_knight_pos(Position *pos)
-{
-    printf("white knight moves: \n");
-    print_bitboard(white_knight_moves(&pos->pieces));
-}
